@@ -5,7 +5,7 @@ import com.codenamebear.petclinic.services.map.OwnerServiceMap;
 
 import java.util.Set;
 
-public interface OwnerService extends OwnerServiceMap<Owner, Long> {
+public interface OwnerService extends CrudService <Owner, Long> {
 
     Owner findByLastName(String lastName);
 
